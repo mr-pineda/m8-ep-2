@@ -1,9 +1,9 @@
 import Home from './Home';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
-describe('First test', () => {
-  it('Should render component', () => {
+describe('Home test test', () => {
+  it('Should render the home Screen', () => {
     render(<Home />);
-    expect(true).toBeTruthy();
+    expect(screen.getByText('Pagina de inicio')).toBeInTheDocument();
   });
 });
