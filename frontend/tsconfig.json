@@ -6,6 +6,6 @@
   ],
   "compilerOptions": {
     "lib": ["esnext", "webworker"],
-    "types": ["@types/serviceworker"]
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   }
 }
